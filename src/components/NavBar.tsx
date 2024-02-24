@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-row gap-4 sticky top-0">
+    <div className="flex flex-row gap-4">
       <NavLink to={"/"}>Home</NavLink>
-      <NavLink to={"/projects"}>project</NavLink>
-      <NavLink to={"/aboutme"}>about me</NavLink>
-      <NavLink to={"/contact"}>contact</NavLink>
+      <NavLink to={"/projects"}>Projects</NavLink>
+      <NavLink to={"/aboutme"}>About me</NavLink>
+      <NavLink to={"/contact"}>Contact</NavLink>
     </div>
   );
 };

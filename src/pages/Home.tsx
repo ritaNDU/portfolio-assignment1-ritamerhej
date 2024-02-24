@@ -1,20 +1,28 @@
-import { keyframes } from "@emotion/react";
-import Reveal, { Fade, Slide } from "react-awesome-reveal";
-
 const Home = () => {
-  const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(100%)
-  }
+  const handleClick = () => {
+    console.log("Clicked");
+  };
 
-  to {
-    opacity: 1;
-    transform: translateX(50%)
-  }
-`;
   return (
-    
+    <div>
+      <section className="hero">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+          obcaecati magni repellat praesentium quia dolorum recusandae
+          voluptatum iure quos, optio, natus mollitia nulla. Magni, quaerat.
+          Veniam fugiat dolores praesentium eos.
+        </p>
+        <button onClick={handleClick}>Discover More</button>
+      </section>
+      <div className="discover-more">
+        <h1>Who am I?</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in rem
+          nulla adipisci aut soluta corrupti quidem similique provident sint
+          quas cum, veritatis quos sit pariatur iste mollitia optio? Itaque.
+        </p>
+      </div>
+    </div>
   );
 };
 
