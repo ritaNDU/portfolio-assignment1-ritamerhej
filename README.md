@@ -8,6 +8,7 @@ It contains information about my experience, education...
 ## Live Demo
 
 For a live demo go to: https://ritandu.github.io/portfolio-assignment1-ritamerhej/#/
+On mobile, the menu opens to the top, so make sure to scroll up to see it.
 
 ## How to install
 
