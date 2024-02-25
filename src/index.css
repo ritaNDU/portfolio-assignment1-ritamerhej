@@ -19,7 +19,7 @@ h2 {
 }
 
 .pages-common-style {
-  @apply flex flex-col;
+  @apply flex flex-col overflow-auto;
 }
 
 .input-style {
