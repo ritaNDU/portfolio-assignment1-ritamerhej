@@ -8,10 +8,10 @@
 }
 
 .navbar-button {
-  @apply px-2 py-1 w-fit rounded-lg text-lg text-indigo-950;
+  @apply px-2 py-1 w-fit rounded-lg text-lg text-black;
 }
 .active {
-  @apply bg-pastel-pink  outline-none;
+  @apply bg-shaded-gray  outline-none;
 }
 
 h2 {
@@ -23,9 +23,49 @@ h2 {
 }
 
 .input-style {
-  @apply border border-gray-400 shadow-sm p-2 rounded-lg invalid:border-red-600 invalid:text-red-600;
+  @apply border border-gray-400 shadow-sm p-2 rounded-lg;
 }
 
 .contact-info {
   @apply flex place-items-center gap-2 mb-1 text-black;
+}
+
+.btn-primary {
+  @apply text-black font-extrabold text-base border-2 border-black p-1 
+  rounded-xl hover:bg-black hover:text-white focus:ring-2 focus:outline-none focus:ring-gray-300;
+}
+
+.burger-button {
+  display: none;
+}
+
+.navbar,
+.navbar-close {
+  @apply h-10 w-screen flex justify-center gap-3 flex-row;
+}
+
+@media screen and (max-width: 550px) {
+  .burger-button {
+    display: block;
+  }
+
+  .navbar {
+    height: fit-content;
+    width: fit-content;
+
+    display: flex;
+    gap: 0;
+    font-size: 1.1em;
+
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+  .navbar-close {
+    display: none;
+  }
+
+  .navbar-button {
+    @apply px-2 py-1 w-fit rounded-lg text-base text-indigo-950;
+  }
 }

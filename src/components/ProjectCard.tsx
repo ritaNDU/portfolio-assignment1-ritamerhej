@@ -6,9 +6,11 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div>
-      <h3 className="text-2xl font-bold text-blue-50">{project.name}</h3>
-      <p className="text-lg text-blue-100 font-semibold">
+    <div className="bg-white p-3 w-10/12 h-5/6 rounded-xl shadow-md">
+      <h3 className="xl:text-2xl text-xl md:text-lg max-sm:text-base font-bold text-black">
+        {project.name}
+      </h3>
+      <p className="text-sm xl:text-lg max-sm:text-sm text-black font-medium ">
         {project.description}
       </p>
     </div>
