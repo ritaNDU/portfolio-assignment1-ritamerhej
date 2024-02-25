@@ -3,8 +3,7 @@
 ## Description
 
 This project is my portfolio.
-It contains information about my experience, education.
-I have actually done the first 3 projects. I am working on the Chip8 emulator. The others are out of pure imagination, just to add some content to the project's page.
+It contains information about my experience, education...
 
 ## How to install
 
@@ -13,7 +12,9 @@ To install and run this project.
 1. Clone the project using the following command:
    git clone https://github.com/ritaNDU/portfolio-assignment1-ritamerhej.git
 2. Go inside the project and run yarn add
-3. Run yarn dev and go to the specified link.
+3. Run the following command:
+   yarn dev
+4. and go to the specified link.
 
 ## Structure
 
