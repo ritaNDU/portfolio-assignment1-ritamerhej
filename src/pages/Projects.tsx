@@ -1,4 +1,3 @@
-import PageHeading from "../components/PageHeading";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects";
 
