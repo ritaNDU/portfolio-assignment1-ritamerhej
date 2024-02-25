@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="h-screen w-screen overflow-x-hidden bg-">
+    <div className="h-screen w-screen overflow-x-hidden  bg-">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
