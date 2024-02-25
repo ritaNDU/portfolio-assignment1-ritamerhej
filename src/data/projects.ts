@@ -30,11 +30,6 @@ const projects: ProjectsStructure[] = [
       "The space rocket project has been creaete to operate a super secret rocket aimed to get out of our galaxy, faster than the speed of light.",
   },
   {
-    name: "Mouse Trap Software",
-    description:
-      "The mouse trap software was developed for the mouse trap we constructed to catch a mouse in our house.",
-  },
-  {
     name: "Battlefield Game",
     description:
       "It's a terminal-based version of the game. It has been developed using C++ as part of a university project.",
