@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slide-in {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: translateX(360deg);
-  }
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: content-box;
 }
-.slidingin {
-  animation: slide-in 1s alternate infinite;
+
+.navbar-button {
+  @apply px-2 py-1 w-fit rounded-lg text-lg text-indigo-950;
+}
+.active {
+  @apply bg-pastel-pink  outline-none;
+}
+
+h2 {
+  @apply text-3xl font-semibold;
+}
+
+.pages-common-style {
+  @apply flex flex-col;
+}
+
+.input-style {
+  @apply border border-gray-400 shadow-sm p-2 rounded-lg invalid:border-red-600 invalid:text-red-600;
+}
+
+.contact-info {
+  @apply flex place-items-center gap-2 mb-1 text-black;
 }

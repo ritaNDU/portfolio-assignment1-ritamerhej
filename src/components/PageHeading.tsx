@@ -1,11 +1,12 @@
 interface Props {
   title: string;
+  className?: string;
 }
 
-const PageHeading: React.FC<Props> = ({ title }) => {
+const PageHeading: React.FC<Props> = ({ title, className }) => {
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className="h-1 p-3">
+      <h1 className={`text-2xl ${className && className}`}>{title}</h1>
     </div>
   );
 };

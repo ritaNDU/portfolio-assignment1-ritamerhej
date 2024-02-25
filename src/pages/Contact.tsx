@@ -1,30 +1,39 @@
-import PageHeading from "../components/PageHeading";
-
 const Contact = () => {
   return (
-    <>
-      <PageHeading title="Contact" />
-      <div>
-        <h1>Get in touch</h1>
-        <p>
+    <div className="pages-common-style gap-10 ">
+      <div className="w-full  bg-[#00008B] p-6">
+        <h2 className="text-blue-50 font-bold mb-2 ">Get in touch</h2>
+        <p className="mb-2 text-blue-100 text-md font-medium">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
           nemo aperiam debitis obcaecati! Nihil, temporibus? Cupiditate nihil
           fugiat dolorum corrupti officia, quos pariatur, ad eos molestias
           inventore nesciunt totam dolor?
         </p>
-        <p>Icon Lebanon, Mansourieh</p>
-        <p>Icon +961 01 234 567</p>
-        <p>Icon ritamerhej@duck.com</p>
       </div>
-      <form id="contact-form" onSubmit={() => alert("Done!")}>
+
+      <form
+        id="contact-form"
+        className="flex flex-col gap-4 px-6 mb-4 bg-white "
+        onSubmit={() => alert("Done!")}
+      >
         <input
           type="text"
           name="first-name"
           placeholder="First Name"
-          required
+          className="input-style"
         />
-        <input type="text" name="last-name" placeholder="Last Name" required />
-        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="text"
+          name="last-name"
+          placeholder="Last Name"
+          className="input-style"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          className="input-style"
+        />
         <textarea
           name="message"
           placeholder="Message"
@@ -32,12 +41,17 @@ const Contact = () => {
           rows={5}
           cols={33}
           style={{ resize: "none" }}
-          required
+          className="input-style"
         ></textarea>
 
-        <button role="submit">Submit</button>
+        <button
+          role="submit"
+          className="text-[#00008B] font-bold border-2 border-[#00008B] p-2 rounded-xl hover:bg-[#00008B] hover:text-white focus:ring-2 focus:outline-none focus:ring-red-400"
+        >
+          Submit
+        </button>
       </form>
-    </>
+    </div>
   );
 };
 
