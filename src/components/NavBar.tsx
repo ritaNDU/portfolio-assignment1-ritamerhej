@@ -7,7 +7,7 @@ const NavBar = () => {
 
   const handleOpenClose = () => setIsOpen(!isOpen);
   return (
-    <div className="p-3 shadow-lg mb-2 bg-white">
+    <div className="p-3 shadow-lg mb-2 bg-white flex flex-col-reverse">
       <nav className={isOpen ? "navbar" : "navbar-close"}>
         <NavLink to={"/"} className="navbar-button">
           Home
